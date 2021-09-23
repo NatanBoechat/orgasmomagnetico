@@ -8,9 +8,9 @@ function App() {
 
   function redirecionar() {
     if (brasil) {
-      window.location.href = 'https://orgasmomagnetico.com.br/embarque';
+      window.location.href = 'https://orgasmomagnetico.com.br/feliz/';
     } else {
-      window.location.href = '';
+      window.location.href = 'https://orgasmomagnetico.com.br/feliz/';
     }
   }
 
