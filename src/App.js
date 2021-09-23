@@ -8,7 +8,7 @@ function App() {
 
   function redirecionar() {
     if (brasil) {
-      window.location.href = 'https://www.google.com';
+      window.location.href = 'https://orgasmomagnetico.com.br/embarque';
     } else {
       window.location.href = '';
     }
