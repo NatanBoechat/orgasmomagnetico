@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.mainContent {
+  height: 100vh;
+  width: 100vw;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./img/bg-desktop.jpg");
+  object-fit: cover;
+  background-size: cover;
+}
+
+.mouth {
+  height: 200px;
+}
+
+.headline {
+  font-size: 47px;
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.btnEmbarcar {
+  width: 480px;
+  height: 76px;
+  padding: 12px 24px;
+  border-radius: 9px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 43px;
+  font-weight: 800;
+  transition: .5s;
+}
+
+.btnEmbarcar:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .mainContent {
+    background-image: url("./img/bg.jpg");
+    object-fit: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+  .btnEmbarcar {
+    width: 259px;
+    font-size: 26px;
+  }
+  .headline {
+    width: 229px;
+    font-size: 37px;
+  }
+  .mouth {
+    height: 98px;
+  }
+  .btnEmbarcar:hover {
+    transform: scale(1.1);
+  }
+}
