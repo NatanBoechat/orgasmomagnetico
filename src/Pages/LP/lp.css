@@ -1,0 +1,352 @@
+/* CSS DOCUMENT */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Ubuntu', sans-serif;
+	color:white;
+}
+
+.regiao{
+	position:relative;
+	background-color:#e63f69;
+	width:100%;
+}
+
+.regiao #region{
+	color:#fff;
+	font-family:Poppins;
+	font-weight: 600;
+	line-height:20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding:20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .regiao #region {
+    font-size:12pt;
+  }
+}
+
+@media only screen and (min-width:601px){
+    .regiao #region {
+        font-size:15pt;
+    }
+}
+
+
+.corpo{
+	width: 100%;
+	background-color:black;
+}
+
+#imgheadline{
+	width:800px;
+	margin-left: auto;
+    margin-right: auto; 
+	justify-content: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding:20px;
+}
+
+#imgheadline #headline{
+	width:100%;
+}
+
+@media only screen and (max-width: 600px) {
+	
+	#imgheadline #headline{
+	width:60%;
+	display: block;
+}
+}
+
+.video-vimeo{
+	width:80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom:50px;
+	margin-top:50px;
+}
+
+@media only screen and (min-width:601px){
+.video-vimeo{
+	width:800px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom:50px;
+	margin-top:50px;
+}
+}
+
+
+#som{
+	color:white;
+	text-align:center;
+}
+
+
+.button-main{
+	width:600px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#e63f69;
+	border:none;
+	margin-bottom:50px;
+}
+
+@media only screen and (max-width:600px){
+.button-main{
+	width:80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:50px;
+}
+}
+
+
+.button-main:hover{
+    box-shadow: 0px 0px 40px #e63f69;
+	cursor: pointer;
+	background-color:#FF3265;
+	transition:0.5s;
+}
+
+.button-main{
+    backgroun: -webkit-linear-gradient(180deg, #228b22 , #ff1);
+    box-shadow: 0px 5px 30px 0px rg(255, 0, 0, 0.5);
+    animation: pisca  .95s;
+    animation-iteration-count: infinite;
+}
+
+.button-main:hover {
+    backgroun: -webkit-linear-gradient(0deg, #ff1, #228b22);
+    box-shadow: 0px 2px 30px 0px #D52A6087;
+    transition:0.3s;
+}
+
+@keyframes pisca {
+    0% {
+        transform: scale(1);
+    } 50% {
+        transform: scale(1.1);
+    } 100% {
+        transform: scale(1);
+    }
+    
+}
+
+p.botao-principal{
+	font-family: "Poppins", Sans-serif;
+    font-size: 15px;
+    line-height: 1.2em;
+    font-weight: 900;
+    border-radius: 5px 5px 5px 5px;
+	color:white;
+}
+
+
+.vagas{
+	width:80%;
+	background-color:blue;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	    background-color: transparent;
+    background-image: linear-gradient(70deg, #FF4B78 0%, #9B072C 100%);
+	padding:10px;
+	border-radius:20px;
+	padding-top:100px;
+	padding-bottom:100px;
+	margin-bottom:50px;
+}
+
+
+.modulos{
+	width:90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:80px;
+}
+
+p.titulo{
+	color: #E63F69;
+	font-size:28pt;
+    font-family: "Ubuntu", Sans-serif;
+	text-align:center;
+	font-weight:800;
+	padding:20px;
+}
+
+
+@media only screen and (max-width:600px){
+#mockup{
+	width:80%;
+	margin-left: auto;
+    margin-right: auto; 
+	justify-content: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding:20px;
+	margin-bottom:30px;
+}
+}
+
+@media only screen and (max-width:600px){
+#garantia{
+	width:80%;
+	margin-left: auto;
+    margin-right: auto; 
+	justify-content: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+}
+
+/*diminuir essa img */
+
+
+
+.textogarantiaa{
+	font-size:17pt;
+    font-family: "Ubuntu", Sans-serif;
+	text-align:center;
+	font-weight:500;
+	margin-bottom:120px;
+}
+
+
+p.titulo2{
+	font-size:20pt;
+    font-family: "Ubuntu", Sans-serif;
+	text-align:center;
+	font-weight:800;
+}
+
+p.titulo3{
+	font-size:15pt;
+	color:#FFFFFFB3;
+    font-family: "Ubuntu", Sans-serif;
+	text-align:center;
+	font-weight:500;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:30px;
+	margin-bottom:80px;
+}
+
+@media only screen and (max-width:600px){
+#pagamentosimg{
+	width:60%;
+	margin-left: auto;
+    margin-right: auto; 
+	justify-content: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding:20px;
+	margin-bottom:30px;
+}
+}
+
+
+
+.btnwpp{
+	width:600px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#0EB43F;
+	border:none;
+	margin-bottom:50px;
+	border-radius:5px;
+}
+
+@media only screen and (max-width:600px){
+.btnwpp{
+	width:80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:50px;
+	transition:0.4s;
+}
+}
+
+
+p.wpp{
+	font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    line-height: 1.2em;
+    font-weight: 900;
+    border-radius: 5px 5px 5px 5px;
+	color:white;
+}
+
+.btnwpp:hover{
+	transform: scale(1.1);
+	background-color:#13A527;
+}
+
+
+.fb{
+	color: #F2F2F2BA;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 400;
+	font-size: 13px;
+    line-height: 1.4em;
+	text-align:center;
+	padding:0px 20px 20px 20px;
+}
+
+.fb a{
+	color:#F2F2F2BA;
+	text-decoration:none;
+}
+
+
+.rodape{
+	width:100%;
+	background-color:#e63f69;
+	padding-bottom:30px;
+}
+
+p#pirataria{
+	padding-top:20px;
+	color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+	text-align:center;
+}
+
+p#textonb{
+	color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+	text-align:center;
+	padding:10px;
+}
+
+#logo{
+	width:70%;
+	margin-left: auto;
+    margin-right: auto; 
+	justify-content: center;
+	display: block;
+}
