@@ -16,7 +16,7 @@ function Initial() {
 
   useEffect(() => {
     async function getData() {
-      const response = await fetch(process.env.REACT_APP_IPINFO);
+      const response = await fetch('https://ipinfo.io/?token=9c8a933f1acc15');
       const data = await response.json();
       console.log(process.env.REACT_APP_IPINFO)
       if (data.country === 'BR') {
