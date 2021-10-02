@@ -11,6 +11,7 @@ import whatsapp from '../../img/whatsapp.png';
 
 function LP() {
   const [cidade, setCidade] = useState();
+  const [mostra, setMostra] = useState(false);
 
   const data = [
     {
@@ -53,44 +54,20 @@ function LP() {
 
   useEffect(() => {
     async function getData() {
-      const response = await fetch('https://ipinfo.io/?token=9c8a933f1acc15');
+      const response = await fetch(process.env.REACT_APP_IPINFO);
       const data = await response.json();
       setCidade(data.city);
     }
+    setTimeout(() => {
+      setMostra(true)
+    }, 30000);
     getData();
   }, []);
-  return (
-    <div className="corpo">
-      <div className="regiao">
-        <span id="region" style={{ color: '#fff', fontFamily: 'Poppins', fontWeight: 600 }}>
-          Você e poucos homens próximos de { cidade } foram selecionados para assistir esse vídeo secreto!
-        </span>
-      </div>
 
-      <div className="corpo">
-        <div id="imgheadline">
-          <img src={headline} alt="some text" id="headline" />
-        </div>
-      </div>
-
-      <div className="video-vimeo">
-        <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
-          <iframe
-            src="https://player.vimeo.com/video/612855132?h=af1c56711b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-            style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
-            title="Comando psicol&amp;oacute;gico secreto para fazer ela gozar sob o seu comando!"
-          />
-        </div>
-
-
-        <p id="som"> POR FAVOR, VERIFIQUE SE O SOM ESTÁ LIGADO! </p>
-      </div>
-
-
-      {/* <!-- OCULTO --> */}
+  function exibeConteudo() {
+    return (
+      <>
+      
       <div id="botaozada">
         <a href="https://pay.hotmart.com/E58118761U?checkoutMode=10&bid=1633136347046" className="button-main"><p className="botao-principal">QUERO O ORGASMO MAGNÉTICO AGORA!</p></a>
       </div>
@@ -215,6 +192,45 @@ function LP() {
         </div>
 
       </div>
+      </>
+    );
+  }
+  return (
+    <div className="corpo">
+      <div className="regiao">
+        <span id="region" style={{ color: '#fff', fontFamily: 'Poppins', fontWeight: 600 }}>
+          Você e poucos homens próximos de { cidade } foram selecionados para assistir esse vídeo secreto!
+        </span>
+      </div>
+
+      <div className="corpo">
+        <div id="imgheadline">
+          <img src={headline} alt="some text" id="headline" />
+        </div>
+      </div>
+
+      <div className="video-vimeo">
+        <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+          <iframe
+            src="https://player.vimeo.com/video/612855132?h=af1c56711b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
+            title="Comando psicol&amp;oacute;gico secreto para fazer ela gozar sob o seu comando!"
+          />
+        </div>
+
+
+        <p id="som"> POR FAVOR, VERIFIQUE SE O SOM ESTÁ LIGADO! </p>
+      </div>
+      {
+        mostra
+        && exibeConteudo()
+      }
+
+
+      
     </div>
   );
 
