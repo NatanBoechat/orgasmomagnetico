@@ -168,15 +168,56 @@ function LP() {
             <p className="wpp">PRECISO DE AJUDA...</p>
           </a>
         </div>
+        
+
+      <div className="fb-p">
+        <p className="fb"> Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais.​</p>
+
+        <p className="fb"><a href="">Termos de uso</a> | <a href="">Políticas de Privacidade</a></p>
+
+      </div>
+      <div className="rodape">
+
+        <div className="rodapeesquerda">
+
+          <img src={logo} alt="some text" id="logo" />
+
+          <p id="textonb">A venda do Orgasmo Magnético só pode ser realizada através deste site, registrado em nome de NB Makers. Qualquer outro site onde você encontre este programa é uma FALSIFICAÇÃO e vai contra as leis. Evite falsificações e recuse conteúdos ilegais ou pirateados. NÃO adquira programas parecidos e que não são baseados em anos de estudo da psicologia comportamental. Não nos responsabilizamos por compras realizadas em outros sites.</p>
+
+        </div>
+
+
+        <div className="rodapeedireita">
+          <p id="textonb">Copyright 2021 – Orgasmo Magnético<br /> Todos os direitos reservados.</p>
+
+        </div>
+
+      </div>
       </>
     );
   }
+
+  function exibe() {
+    return (
+      <div style={ { position: 'absolute', bottom: '0px' } }>
+        <div className="fb-p">
+        <p className="fb"> Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais.​</p>
+
+        <p className="fb"><a href="">Termos de uso</a> | <a href="">Políticas de Privacidade</a></p>
+
+      </div>
+      </div>
+    );
+  }
+
+
+
   return (
     <div className="corpo">
       <div className="regiao">
-        <span id="region" style={{ color: '#fff', fontFamily: 'Poppins', fontWeight: 600 }}>
+        <p id="region" style={{ color: '#fff', fontWeight: 600 }}>
           Você e poucos homens próximos de {cidade} foram selecionados para assistir esse vídeo secreto!
-        </span>
+        </p>
       </div>
 
       <div className="corpo">
@@ -202,33 +243,9 @@ function LP() {
       </div>
       {
         mostra
-        && exibeConteudo()
+        ? exibeConteudo()
+        : exibe()
       }
-
-      <div className="fb-p">
-        <p className="fb"> Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais.​</p>
-
-        <p className="fb"><a href="">Termos de uso</a> | <a href="">Políticas de Privacidade</a></p>
-
-      </div>
-      <div className="rodape">
-
-        <div className="rodapeesquerda">
-          <p id="pirataria">PIRATARIA É <span style={{ color: '#000', fontweight: '600' }}>CRIME</span></p>
-
-          <img src={logo} alt="some text" id="logo" />
-
-          <p id="textonb">A venda do Orgasmo Magnético só pode ser realizada através deste site, registrado em nome de NB Makers. Qualquer outro site onde você encontre este programa é uma FALSIFICAÇÃO e vai contra as leis. Evite falsificações e recuse conteúdos ilegais ou pirateados. NÃO adquira programas parecidos e que não são baseados em anos de estudo da psicologia comportamental. Não nos responsabilizamos por compras realizadas em outros sites.</p>
-
-        </div>
-
-
-        <div className="rodapeedireita">
-          <p id="textonb">Copyright 2021 – Orgasmo Magnético<br /> Todos os direitos reservados.</p>
-
-        </div>
-
-      </div>
 
 
 
