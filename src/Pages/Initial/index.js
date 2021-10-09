@@ -3,6 +3,7 @@ import './App.css';
 
 import Mouth from '../../img/icone.png'
 
+<head>
 <!-- Facebook Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -20,6 +21,7 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=900723827493782&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+ </head>
 
 
 function Initial() {
